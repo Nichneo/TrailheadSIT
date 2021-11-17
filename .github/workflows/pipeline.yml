@@ -36,7 +36,7 @@ jobs:
         CLIENT_ID: ${{ secrets.SALESFORCEPRODCLIENTID }}
         USERNAME: ${{ secrets.SALESFORCEPRODUSERNAME }}
         INSTANCE_URL: ${{ secrets.SALESFORCEPRODINSTANCEURL }}
-      run: sfdx force:auth:web:login --clientid $CLIENT_ID --username $USERNAME --instanceurl $INSTANCE_URL -a prod
+      run: sfdx force:auth:web:login --clientid $CLIENT_ID --instanceurl $INSTANCE_URL -a prod
 
     # Convert to Deploy Source
     - name: Convert to Deploy Source
